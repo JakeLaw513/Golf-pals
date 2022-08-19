@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 const FORM_ENDPOINT = ""; 
 
+
 const ContactForm = () => {
   const [submitted, setSubmitted] = useState(false);
   const handleSubmit = () => {
@@ -10,17 +11,17 @@ const ContactForm = () => {
       setSubmitted(true);
     }, 100);
   };
-
+  
   if (submitted) {
     return (
       <>
         <div className="text-2xl">Thank you!</div>
-        <div className="text-md">We'll be in touch soon.</div>
+        <div className="text-md">Your future partner will be in touch soon.</div>
       </>
     );
   }
-
   return (
+    <div className="bigBoy">
     <form
       action={FORM_ENDPOINT}
       onSubmit={handleSubmit}
@@ -66,6 +67,7 @@ const ContactForm = () => {
         </button>
       </div>
     </form>
+    </div>
   );
 };
 

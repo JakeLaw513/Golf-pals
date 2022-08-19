@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import '../App.css';
 import { Link } from 'react-router-dom';
+
+
 const DisplayAll = () => {
     const [allGolfers, setAllGolfers] = useState([])
     useEffect(() => {

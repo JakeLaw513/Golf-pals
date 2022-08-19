@@ -67,7 +67,7 @@ const GolfForm= () => {
                         onChange={(e) => setSkill1(e.target.value)}
                         value={skill1}
                         />
-                    {errors.name ? <p>{errors.name.message}</p> : null}
+                    {/* {errors.name ? <p>{errors.name.message}</p> : null} */}
                     <label htmlFor="skill 2">Course 2:</label>
                         <input 
                         type="text" 
@@ -75,7 +75,7 @@ const GolfForm= () => {
                         onChange={(e) => setSkill2(e.target.value)}
                         value={skill2}
                         />
-                    {errors.type ? <p>{errors.type.message}</p> : null}
+                    {/* {errors.type ? <p>{errors.type.message}</p> : null} */}
                     <label htmlFor="skill 3">Course 3:</label>
                         <input 
                         type="text" 
@@ -83,7 +83,7 @@ const GolfForm= () => {
                         onChange={(e) => setSkill3(e.target.value)}
                         value={skill3}
                         />
-                    {errors.type ? <p>{errors.description.message}</p> : null}
+                    {/* {errors.type ? <p>{errors.description.message}</p> : null} */}
                 </div>
                 <button className="btn-primary" type="submit">
                     Get Playing!

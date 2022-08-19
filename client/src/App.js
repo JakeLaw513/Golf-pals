@@ -5,11 +5,14 @@ import GolfForm from './components/GolfForm';
 import EditGolf from './components/EditGolf';
 import GolfDetails from './components/GolfDetails';
 import ContactForm from './components/ContactForm';
+import logo from './components/logo/golfPals.jpg';
 
 function App() {
   return (
     <div className="App">
-      <h1 className="main-header">Golf-Pals</h1>
+      <h1 className="logo">
+        <img className="logo" src={logo} alt="logo" />
+      </h1>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<DisplayAll />} />

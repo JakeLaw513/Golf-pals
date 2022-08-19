@@ -74,7 +74,7 @@ const handleBlockGolf = (id) => {
                 <Link to="/" className="home-2">back to home</Link>
                 <button className="blocking"
                         onClick={() => handleBlockGolf(id)}
-                        >Block {golfName}</button>
+                        >Remove {golfName}</button>
                           <Link to={`/ContactForm/${id}`}>
                                                 <button className= "blocking-2">Message {golfName}</button>
                                             </Link>
@@ -99,7 +99,7 @@ const handleBlockGolf = (id) => {
                         <br/>
                         <li className="combine-1">{skill3}</li>
                     </ul>
-                </div>
+                    </div>
                 {errors.name ? <p>{errors.name.message}</p> : null}
             </form>
         );
